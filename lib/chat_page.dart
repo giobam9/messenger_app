@@ -18,7 +18,7 @@ class _ChatPageState extends State<ChatPage> {
   void initState() {
     super.initState();
     // Подключение к WebSocket-серверу
-    channel = IOWebSocketChannel.connect('ws://localhost:3000');
+    channel = IOWebSocketChannel.connect('wss://https://messendger-app.onrender.com');
 
     // Подписка на получение сообщений
     channel.stream.listen((message) {
